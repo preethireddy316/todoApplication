@@ -1,0 +1,31 @@
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+###
+GET http://localhost:3000/todos/1/
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 8,
+ "todo": "Learn Node JS",
+ "priority": "HIGH",
+ "status": "TO DO",
+ "category": "LEARNING",
+ "dueDate": "2021-02-22"
+}
+
+###
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{ "dueDate": "2020-01-05" }
+
+###
+DELETE http://localhost:3000/todos/6/
+
+###
+GET http://localhost:3000/agenda?date=2077-8
+
+
+###
